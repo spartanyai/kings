@@ -17,6 +17,49 @@ header{
     justify-content: space-between;
     padding: 33px 9%;
     background: transparent;
+    flex-wrap: wrap;
+}
+
+.box-king{
+    width: 100%;
+    margin-top: 12px;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.button {
+    background-color: rgb(175, 210, 243);
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.king1{border: 2px solid #090e57;}
+.king2{border: 2px solid #090e57;}
+.king3{border: 2px solid #090e57;}
+.king4{border: 2px solid #090e57;}
+
+.king1:hover{
+    background-color: #16193b;
+    color: white
+}
+.king2:hover{
+    background-color: #16193b;
+    color: white;
+}
+.king3:hover{
+    background-color: #16193b;
+    color: white;
+}
+.king4:hover{
+    background-color: #16193b;
+    color: white;
 }
 
 .logo{
@@ -57,6 +100,7 @@ header{
     align-items: center;
     gap: 2rem;
 }
+
 
 section{
     padding: 0 19%;

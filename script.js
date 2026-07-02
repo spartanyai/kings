@@ -17,3 +17,64 @@ sr.reveal('.hero-text',{delay:200, origin:'top'});
 sr.reveal('.hero-img',{delay:100, origin:'top'});
 sr.reveal('.icons',{delay:600, origin:'left'});
 sr.reveal('.scroll-down',{delay:100, origin:'right'});
+
+const heroSection = document.getElementById('hero-section')
+
+const heroTitle = document.getElementById('hero-title');
+const heroDesc = document.getElementById('hero-desc');
+const heroImage = document.getElementById('hero-image');
+const herolead = document.getElementById('hero-lead');
+const herosub = document.getElementById('hero-sub');
+
+const btnking1 = document.querySelector('.king1')
+const btnking2 = document.querySelector('.king2')
+const btnking3 = document.querySelector('.king3')
+const btnking4 = document.querySelector('.king4')
+
+// 2. ຟັງຊັນສຳລັບປ່ຽນຂໍ້ມູນແບບມີ Transition .55s
+function changeHeroContent(newTitle, newDesc, newImgSrc) {
+    // ກົດປຸ່ມປຸບ -> ໃຫ້ຈາງຫາຍໄປກ່ອນ (Fade Out)
+    heroSection.classList.add('fade');
+
+    // ໜ່ວງເວລາໄວ້ 250 ມິນລິວິນາທີ (ໃຫ້ມັນຈາງລົງເຄິ່ງໜຶ່ງກ່ອນ ແລ້ວປ່ຽນຂໍ້ມູນທັນທີ)
+    setTimeout(() => {
+        heroTitle.textContent = newTitle;
+        heroDesc.innerHTML = newDesc;
+        heroImage.src = newImgSrc;
+
+        // ປ່ຽນຂໍ້ມູນແລ້ວ -> ເອົາ class fade ອອກ ເພື່ອໃຫ້ມັນຄ່ອຍໆສະແດງຂຶ້ນມາ (Fade In)
+        heroSection.classList.remove('fade');
+    }, 250); 
+}
+
+btnking1.addEventListener('click', () => {
+    changeHeroContent( 
+        'King Go', 
+        'ตอนนี้ King กำลังจะได้รับ RTX2234 จาก Spy', 
+        './image/king01-removebg-preview.png'
+    );
+});
+
+btnking2.addEventListener('click', ()=>{
+    changeHeroContent( 
+        'King back', 
+        'นี่มันสุดยอด แต่เป็นสุดยอดในแบบย้อนยุค', 
+        './image/king02-removebg-preview.png'
+    );
+});
+
+btnking3.addEventListener('click', ()=>{
+    changeHeroContent(
+        'Kingger',
+        'King ที่เป็น kingger',
+        './image/kinger01-removebg-preview.png'
+    );
+});
+
+btnking4.addEventListener('click', ()=>{
+    changeHeroContent(
+        'Kingging',
+        'King King King King King King King King King <br> King King King King King King King King King King King',
+        './image/king.png'
+    );
+});
