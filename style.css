@@ -26,6 +26,12 @@ header{
     justify-content: flex-start;
     display: flex;
 }
+.box-tew{
+    width: 100%;
+    margin-top: 12px;
+    justify-content: flex-start;
+    display: flex;
+}
 
 .button {
     background-color: rgb(175, 210, 243);
@@ -40,6 +46,29 @@ header{
     transition-duration: 0.2s;
     cursor: pointer;
 }
+
+.tew1{border: 2px solid #090e57;}
+.tew2{border: 2px solid #090e57;}
+.tew3{border: 2px solid #090e57;}
+.tew4{border: 2px solid #090e57;}
+
+.tew1:hover{
+    background-color: #16193b;
+    color: white
+}
+.tew2:hover{
+    background-color: #16193b;
+    color: white
+}
+.tew3:hover{
+    background-color: #16193b;
+    color: white
+}
+.tew4:hover{
+    background-color: #16193b;
+    color: white
+}
+
 .king1{border: 2px solid #090e57;}
 .king2{border: 2px solid #090e57;}
 .king3{border: 2px solid #090e57;}

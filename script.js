@@ -31,6 +31,11 @@ const btnking2 = document.querySelector('.king2')
 const btnking3 = document.querySelector('.king3')
 const btnking4 = document.querySelector('.king4')
 
+const btntew1 = document.querySelector('.tew1')
+const btntew2 = document.querySelector('.tew2')
+const btntew3 = document.querySelector('.tew3')
+const btntew4 = document.querySelector('.tew4')
+
 // 2. ຟັງຊັນສຳລັບປ່ຽນຂໍ້ມູນແບບມີ Transition .55s
 function changeHeroContent(newTitle, newDesc, newImgSrc) {
     // ກົດປຸ່ມປຸບ -> ໃຫ້ຈາງຫາຍໄປກ່ອນ (Fade Out)
@@ -76,5 +81,37 @@ btnking4.addEventListener('click', ()=>{
         'Kingging',
         'King King King King King King King King King <br> King King King King King King King King King King King',
         './image/king.png'
+    );
+});
+
+btntew1.addEventListener('click', () => {
+    changeHeroContent( 
+        'Tew', 
+        'Tew Tew Tew Tew Tew Tew Tew Tew Tew Tew Tew Tew <br> Tew Tew Tew Tew Tew Tew Tew Tew Tew Tew Tew Tew', 
+        './image/tew04-removebg-preview.png'
+    );
+});
+
+btntew2.addEventListener('click', () => {
+    changeHeroContent( 
+        'Tew angry', 
+        'Tew โมโหแล้ว 😡', 
+        './image/tew01-removebg-preview.png'
+    );
+});
+
+btntew3.addEventListener('click', () => {
+    changeHeroContent( 
+        'Tew Cow', 
+        'Tew ที่เป็น วัว ', 
+        './image/tew02-removebg-preview.png'
+    );
+});
+
+btntew4.addEventListener('click', () => {
+    changeHeroContent( 
+        'Tew LGBTQ+', 
+        'Tew ที่เป็น LGBTQ+ ', 
+        './image/tew03-removebg-preview.png'
     );
 });
